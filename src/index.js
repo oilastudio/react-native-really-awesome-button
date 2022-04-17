@@ -2,10 +2,10 @@ import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import {
   ActivityIndicator,
-  TouchableWithoutFeedback,
+  Pressable,
   View,
   Animated,
-  ViewPropTypes
+  ViewPropTypes,
 } from "react-native";
 import { animateTiming, animateElastic, animateSpring } from "./helpers";
 import { styles, getStyles } from "./styles";
@@ -427,10 +427,11 @@ export default class Button extends React.Component {
     const { ExtraContent, style, activityColor } = this.props;
 
     return (
-      <TouchableWithoutFeedback
+      <Pressable
         testID="aws-btn-content-view"
         onPressIn={this.pressIn}
-        onPressOut={this.pressOut}
+        onPress={this.pressOut}
+        onTouchCancel={()=>{this.end()}}
       >
         <Animated.View
           testID="aws-btn-content-2"
@@ -500,7 +501,7 @@ export default class Button extends React.Component {
             </View>
           </Animated.View>
         </Animated.View>
-      </TouchableWithoutFeedback>
+      </Pressable>
     );
   }
 }

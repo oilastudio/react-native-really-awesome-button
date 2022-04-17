@@ -1,4 +1,16 @@
-# React Native &lt;AwesomeButton /&gt;
+
+## NOTICE
+
+
+| :zap:        INFO |
+|-------------------|
+
+### Forked since the original one is not maintained anymore
+
+#### Fixed:
+ - press would not be canceled on swipe/slide/move out
+
+### React Native &lt;AwesomeButton /&gt;
 
 [![Travis](https://img.shields.io/travis/rcaferati/react-native-really-awesome-button/master.svg)](https://travis-ci.org/rcaferati/react-native-really-awesome-button) ![NPM](https://img.shields.io/npm/v/react-native-really-awesome-button.svg)
 
