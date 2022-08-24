@@ -166,4 +166,4 @@ Checkout the web version of the Awesome Button UI component at [rcaferati/react-
 
 ## License
 
-MIT. Copyright (c) 2018 Rafael Caferati.
+MIT. Copyright (c) 2018 Rafael Caferati. 
