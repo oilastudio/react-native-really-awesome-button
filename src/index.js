@@ -5,8 +5,8 @@ import {
   Pressable,
   View,
   Animated,
-  ViewPropTypes,
 } from "react-native";
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 import { animateTiming, animateElastic, animateSpring } from "./helpers";
 import { styles, getStyles } from "./styles";
 import {
